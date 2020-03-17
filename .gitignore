@@ -1,0 +1,11 @@
+/mysite/db.sqlite3
+# Default ignored files
+/workspace.xml
+/ashiq5.github.io.iml
+
+/.idea/misc.xml
+/.idea/ashiq5.github.io.iml
+/.idea/modules.xml
+/.idea/inspectionProfiles/profiles_settings.xml
+/.idea/vcs.xml
+/.idea/workspace.xml
