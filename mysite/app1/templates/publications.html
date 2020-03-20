@@ -1,16 +1,24 @@
-<!DOCTYPE html>
+{% extends "base.html" %}
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Ishtiaq's Publications</title>
+    <title>{% block title %}Ishtiaq's Publications{% endblock %}</title>
 </head>
 <body>
- {% include "menu.html" %}
- <ul>
-     <li><b>Md. Ishtiaq Ashiq</b>, Protick Bhowmick, Md. Shohrab Hossain and Husnu S. Narman,
-         "<i>Domain Flux based DGA Botnet Detection Using Feedforward Neural Network</i>",
-         accepted for publication in <b>IEEE Military Communications (MILCOM)</b>,
-         Norfolk, VA, USA, Nov 12-14, 2019</li>
- </ul>
+{% block pagecontent %}
+    <ul>
+        <li><b>Md. Ishtiaq Ashiq</b>, Protick Bhowmick, Md. Shohrab Hossain and Husnu S. Narman,
+            "<i>Domain Flux based DGA Botnet Detection Using Feedforward Neural Network</i>",
+            accepted for publication in <b>IEEE Military Communications (MILCOM)</b>,
+            Norfolk, VA, USA, Nov 12-14, 2019
+        </li>
+    </ul>
+{% endblock %}
 </body>
 </html>
+{% block script %}
+    <script type="text/javascript">
+        $('nav li a').removeClass('active');
+        $('nav li a[href="/' + location.pathname.split("/")[1] + '"]').addClass('active');
+    </script>
+{% endblock %}

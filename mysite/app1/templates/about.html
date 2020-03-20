@@ -1,21 +1,28 @@
-<!DOCTYPE html>
+{% extends "base.html" %}
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>About Ishtiaq</title>
+    <title>{% block title %}About Ishtiaq{% endblock %}</title>
 </head>
 <body>
-{% include "menu.html" %}
-<p>
-    I am a Lecturer in the Department of Computer Science and Engineering at United International University, Dhaka,
-    Bangladesh. I did my Bachelors (B.Sc.) from Bangladesh University of Engineering and Technology (BUET) in October,
-    2018.</p>
+{% block pagecontent %}
+    <p>
+        I am a Lecturer in the Department of Computer Science and Engineering at United International University, Dhaka,
+        Bangladesh. I did my Bachelor's (B.Sc.) from Bangladesh University of Engineering and Technology (BUET) in
+        October 2018.</p>
 
-<p>My research interest lies in security and privacy, software engineering, and natural language processing.
-</p>
-<p>From 2018 to July 2019, I worked as a Software Engineer in the Design and Development Department at InfoSapex
-    Limited,
-    Dhaka, Bangladesh.</p>
-</p>
+    <p>My research interest lies in security and privacy, software engineering, and natural language processing.
+    </p>
+    <p>From 2018 to July 2019, I worked as a Software Engineer in the Design and Development Department at InfoSapex
+        Limited,
+        Dhaka, Bangladesh.</p>
+    </p>
+{% endblock %}
 </body>
 </html>
+{% block script %}
+    <script type="text/javascript">
+        $('nav li a').removeClass('active');
+        $('nav li a[href="/' + location.pathname.split("/")[1] + '"]').addClass('active');
+    </script>
+{% endblock %}
