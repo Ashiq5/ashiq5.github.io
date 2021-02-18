@@ -28,7 +28,7 @@ SECRET_KEY = 'c+dfu93yc3sfv3p-!aii3+bgvff=@!n)^#!l1psvfymf%s#lsf'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ["ashiq5.pythonanywhere.com"]
 
 
 # Application definition
@@ -124,3 +124,5 @@ STATIC_URL = '/staticfiles/'
 STATICFILES_DIRS = (
     os.path.join(BASE_DIR, 'staticfiles'),
 )
+
+STATIC_ROOT = "/home/ashiq5/ashiq5.github.io/mysite/staticfiles"

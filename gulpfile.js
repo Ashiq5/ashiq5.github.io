@@ -4,7 +4,7 @@ var uglify = require('gulp-uglify');
 
 async function css() {
   const files = [
-    'mysite/node_modules/bootstrap/dist/css/bootstrap.min.css',
+    'node_modules/bootstrap/dist/css/bootstrap.min.css',
   ];
   return gulp.src(files).pipe(gulp.dest('mysite/staticfiles/css'))
 }
@@ -12,8 +12,8 @@ async function css() {
 // Task 2: copy jquery's assets to /_vendor/
 async function js() {
   const files = [
-    'mysite/node_modules/jquery/dist/jquery.min.js',
-    'mysite/node_modules/bootstrap/dist/js/bootstrap.min.js'
+    'node_modules/jquery/dist/jquery.min.js',
+    'node_modules/bootstrap/dist/js/bootstrap.min.js'
   ];
   return gulp.src(files).pipe(gulp.dest('mysite/staticfiles/js'))
 }
