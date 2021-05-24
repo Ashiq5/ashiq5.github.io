@@ -29,4 +29,9 @@
         $('nav li a[href="/' + location.pathname.split("/")[1] + '"]').addClass('active');
     </script>
 {% endblock %}
+{% block css %}
+    <style>
+        .pdfobject-container { width:100%; height: 30rem; border: 1rem solid rgba(0,0,0,.1); }
+    </style>
+{% endblock %}
 </html>
