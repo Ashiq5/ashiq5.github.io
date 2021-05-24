@@ -12,8 +12,9 @@ async function css() {
 // Task 2: copy jquery's assets to /_vendor/
 async function js() {
   const files = [
-    'node_modules/jquery/dist/jquery.min.js',
-    'node_modules/bootstrap/dist/js/bootstrap.min.js'
+      'node_modules/jquery/dist/jquery.min.js',
+      'node_modules/bootstrap/dist/js/bootstrap.min.js',
+      'node_modules/pdfobject/pdfobject.min.js'
   ];
   return gulp.src(files).pipe(gulp.dest('mysite/staticfiles/js'))
 }

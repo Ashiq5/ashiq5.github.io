@@ -16,12 +16,14 @@
 {#    height="100%"#}
 {#    width="100%"#}
 {#></iframe>#}
+    <div id="example1"></div>
 {#    <embed id="resume" src="{% static 'files/resume.pdf' %}" type="application/pdf" width="100%"/>#}
-    <embed id="resume" src="http://docs.google.com/gview?embedded=true&url=https://www.pythonanywhere.com/user/ashiq5/files/home/ashiq5/ashiq5.github.io/mysite/staticfiles/files/resume.pdf" type="application/pdf" width="100%"/>
+{#    <embed id="resume" src="http://docs.google.com/gview?embedded=true&url=https://www.pythonanywhere.com/user/ashiq5/files/home/ashiq5/ashiq5.github.io/mysite/staticfiles/files/resume.pdf" type="application/pdf" width="100%"/>#}
 </div>
 {% endblock %}
 </body>
 {% block script %}
+    <script>PDFObject.embed("{% static 'files/resume.pdf' %}", "#example1");</script>
     <script type="application/javascript">
         window.addEventListener('DOMContentLoaded', function (e) {
             let resume = document.getElementById('resume');
