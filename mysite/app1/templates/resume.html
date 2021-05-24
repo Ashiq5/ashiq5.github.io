@@ -25,6 +25,10 @@
 {% block script %}
     <script>PDFObject.embed("{% static 'files/resume.pdf' %}", "#example1");</script>
     <script type="application/javascript">
+        window.addEventListener('DOMContentLoaded', function (e) {
+            let resume = document.getElementById('example1');
+            resizeToFitContent(resume, window);
+        });
         $('nav li a').removeClass('active');
         $('nav li a[href="/' + location.pathname.split("/")[1] + '"]').addClass('active');
     </script>
