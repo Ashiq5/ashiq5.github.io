@@ -23,12 +23,9 @@
 {% endblock %}
 </body>
 {% block script %}
+    <script src="node_modules/pdfobject/pdfobject.min.js"></script>
     <script>PDFObject.embed("{% static 'files/resume.pdf' %}", "#example1");</script>
     <script type="application/javascript">
-        window.addEventListener('DOMContentLoaded', function (e) {
-            let resume = document.getElementById('resume');
-            resizeToFitContent(resume, window);
-        });
         $('nav li a').removeClass('active');
         $('nav li a[href="/' + location.pathname.split("/")[1] + '"]').addClass('active');
     </script>
