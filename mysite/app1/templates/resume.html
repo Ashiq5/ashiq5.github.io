@@ -23,7 +23,6 @@
 {% endblock %}
 </body>
 {% block script %}
-    <script src="node_modules/pdfobject/pdfobject.min.js"></script>
     <script>PDFObject.embed("{% static 'files/resume.pdf' %}", "#example1");</script>
     <script type="application/javascript">
         $('nav li a').removeClass('active');
