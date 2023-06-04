@@ -1,0 +1,37 @@
+li.pubs-heading {
+    padding-bottom: 2px;
+}
+
+.pubs-heading-text {
+    font-weight: bold;
+    font-size: small;
+    text-transform: capitalize;
+}
+
+li.pubs-element {
+    padding-bottom: 15px;
+    font-size: 80%;
+}
+
+ul.pubs-list {
+    text-align: left;
+    list-style-type: square;
+    font-size: 100%;
+    margin: 0;
+}
+
+ul.pubs-element-list {
+    text-align: left;
+    list-style-type: square;
+    padding-left: 10px;
+    font-size: 100%;
+}
+
+ul.job-element-list {
+    text-align: left;
+    list-style-type: none;
+    padding-left: 10px;
+    font-size: 100%;
+}
+
+
