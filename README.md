@@ -1,3 +1,3 @@
 # ashiq5.github.io
 
-https://ashiq5.pythonanywhere.com/
+https://ashiq5.github.com/
